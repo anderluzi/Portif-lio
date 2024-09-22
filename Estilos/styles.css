@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-fonte: white;
+    --cor-dest: aqua;
+    --cor-fundo: black;
+}
+/* importando as fontes para a página*/
+*{
+    padding: 0;
+    margin: 0;
+    /*resetando a margem e a distancia entre os elementos e borda da página*/
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    /*definindo a cor da fonte,cor do plano de fundo 
+    e confirgurando o conteudo da pagina*/
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+    /*estilizando o espaçamento*/
+}
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+    /*estilizando o espaço entre os elementos*/
+}
+.cabecalho_link{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--cor-dest);
+    text-decoration: none;
+    /*estilizando o cabeçalho*/
+}
+.apresentacao{
+    padding: 10% 15%;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+    /*alinhando os elementos da pagina usando flex-box*/
+}
+.apr_conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /*alinhando os elementos da pagina usando flex-box
+    e o espaço entre os elementos*/
+}
+.apr_cont_titulo{
+    font-family:"Krona One", sans-serif;
+    font-size: 2rem;
+    /*definindo a fonte e o tamanho*/
+}
+.apr_cont_paragrafo{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600%;
+    font-style: italic;
+    text-align: justify;
+    /*definindo a fonte, tamanho e estilo*/
+}
+.apr_link{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    /*alinhando os links e definindo o espaço entre eles*/
+}
+.apr_subtitulo{
+    font-family: "Krona One", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    /*definindo a fonte, intensidade e tamanho*/
+}
+.apr_link_estilo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px inset var(--cor-dest);
+    font-size: 1.4rem;
+    padding: 15.5px 0px;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    /*definindo a fonte,tamanho e cor, configurando a largura e 
+    centralizando o conteúdo, estilizando a borda/contorno*/
+}
+.apr_link_estilo:hover{
+    background: #272727;
+}
+.palavra-destaque{
+    color: var(--cor-dest);
+    /*mudando a cor da palavra em destaque*/
+}
+.ajustar-tamanho{
+    width: 40%;
+    border-radius: 8px;
+    border: 4px inset aqua;
+    /*ajustando a altura e largura da imagem e estilizando a
+    borda/contorno*/
+}
+.rodape{
+    color: var(--cor-fundo);
+    background-color: var(--cor-dest);
+    padding: 22px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    /*estilizando o rodapé*/
+}
+@media(max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho_menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apr_conteudo{
+        width: auto;
+    }
+}
